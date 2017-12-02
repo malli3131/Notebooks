@@ -1,0 +1,288 @@
+{
+  "paragraphs": [
+    {
+      "text": "println(\"Hello Scala\")",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:44:38 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "Hello Scala\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512224054900_935951517",
+      "id": "20171202-194414_1500462268",
+      "dateCreated": "Dec 2, 2017 7:44:14 PM",
+      "dateStarted": "Dec 2, 2017 7:44:38 PM",
+      "dateFinished": "Dec 2, 2017 7:44:39 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "object Hello {\n    def main(args:Array[String]){\n        println(\"Hello Scala\")\n    }\n}",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:50:30 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "defined object Hello\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512224078927_-694816825",
+      "id": "20171202-194438_950254694",
+      "dateCreated": "Dec 2, 2017 7:44:38 PM",
+      "dateStarted": "Dec 2, 2017 7:50:30 PM",
+      "dateFinished": "Dec 2, 2017 7:50:31 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "def add(a:Int, b:Int) : Int \u003d {\n    ( a + b)\n}",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:51:17 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "add: (a: Int, b: Int)Int\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512224430435_589011989",
+      "id": "20171202-195030_212661287",
+      "dateCreated": "Dec 2, 2017 7:50:30 PM",
+      "dateStarted": "Dec 2, 2017 7:51:17 PM",
+      "dateFinished": "Dec 2, 2017 7:51:17 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val c \u003d add(20, 30)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:51:34 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "c: Int \u003d 50\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512224477079_-33234252",
+      "id": "20171202-195117_270531605",
+      "dateCreated": "Dec 2, 2017 7:51:17 PM",
+      "dateStarted": "Dec 2, 2017 7:51:34 PM",
+      "dateFinished": "Dec 2, 2017 7:51:35 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val c \u003d (a:Int, b:Int) \u003d\u003e (a + b)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:52:35 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "c: (Int, Int) \u003d\u003e Int \u003d \u003cfunction2\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512224494716_-1245177963",
+      "id": "20171202-195134_1238142381",
+      "dateCreated": "Dec 2, 2017 7:51:34 PM",
+      "dateStarted": "Dec 2, 2017 7:52:35 PM",
+      "dateFinished": "Dec 2, 2017 7:52:35 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "c(30, 40)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:52:50 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res12: Int \u003d 70\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512224537734_-62582437",
+      "id": "20171202-195217_1664153495",
+      "dateCreated": "Dec 2, 2017 7:52:17 PM",
+      "dateStarted": "Dec 2, 2017 7:52:50 PM",
+      "dateFinished": "Dec 2, 2017 7:52:50 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "(x:Int) \u003d\u003e (x + 1)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:56:22 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res13: Int \u003d\u003e Int \u003d \u003cfunction1\u003e\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512224570235_428403132",
+      "id": "20171202-195250_1568453939",
+      "dateCreated": "Dec 2, 2017 7:52:50 PM",
+      "dateStarted": "Dec 2, 2017 7:56:22 PM",
+      "dateFinished": "Dec 2, 2017 7:56:22 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1512224782241_82219422",
+      "id": "20171202-195622_939823478",
+      "dateCreated": "Dec 2, 2017 7:56:22 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Scala",
+  "id": "2D2STN2U3",
+  "angularObjects": {
+    "2D2XF6DXX:shared_process": [],
+    "2CZBD4R81:shared_process": [],
+    "2D2P2SB47:shared_process": [],
+    "2D3BSM1Q9:shared_process": [],
+    "2CZEKN1CJ:shared_process": [],
+    "2CYY5DHZA:shared_process": [],
+    "2CZBQQANG:shared_process": [],
+    "2D1QBJRSU:shared_process": [],
+    "2CZP22M4C:shared_process": [],
+    "2CZVY7Z82:shared_process": [],
+    "2D2AZ9GW8:shared_process": [],
+    "2CYF2B2ZT:shared_process": [],
+    "2CYU6GUGU:shared_process": [],
+    "2D2FDAHWV:shared_process": [],
+    "2CYQ43XES:shared_process": [],
+    "2D27ZBXK2:shared_process": [],
+    "2CZQDPADQ:shared_process": [],
+    "2CYGN7QWS:shared_process": [],
+    "2D2B7S5TG:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}

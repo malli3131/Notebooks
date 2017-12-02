@@ -1,0 +1,647 @@
+{
+  "paragraphs": [
+    {
+      "text": "sc",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:48:12 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res0: org.apache.spark.SparkContext \u003d org.apache.spark.SparkContext@211aa195\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512220681577_1101352505",
+      "id": "20171202-184801_510533991",
+      "dateCreated": "Dec 2, 2017 6:48:01 PM",
+      "dateStarted": "Dec 2, 2017 6:48:12 PM",
+      "dateFinished": "Dec 2, 2017 6:48:54 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val data \u003d sc.parallelize(Array(1,2,3,4,5))",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:49:51 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "data: org.apache.spark.rdd.RDD[Int] \u003d ParallelCollectionRDD[0] at parallelize at \u003cconsole\u003e:27\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512220692067_-1554184404",
+      "id": "20171202-184812_687145787",
+      "dateCreated": "Dec 2, 2017 6:48:12 PM",
+      "dateStarted": "Dec 2, 2017 6:49:51 PM",
+      "dateFinished": "Dec 2, 2017 6:49:53 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val mydata \u003d data.map(record \u003d\u003e (record * record))",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:50:49 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "mydata: org.apache.spark.rdd.RDD[Int] \u003d MapPartitionsRDD[1] at map at \u003cconsole\u003e:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512220791147_-1467076266",
+      "id": "20171202-184951_457487458",
+      "dateCreated": "Dec 2, 2017 6:49:51 PM",
+      "dateStarted": "Dec 2, 2017 6:50:49 PM",
+      "dateFinished": "Dec 2, 2017 6:50:50 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "mydata.collect()",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:51:04 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res1: Array[Int] \u003d Array(1, 4, 9, 16, 25)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512220849281_1835700238",
+      "id": "20171202-185049_1851171789",
+      "dateCreated": "Dec 2, 2017 6:50:49 PM",
+      "dateStarted": "Dec 2, 2017 6:51:04 PM",
+      "dateFinished": "Dec 2, 2017 6:51:06 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "def square(x:Int) : Int \u003d {\n    (x * x)\n}",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:55:23 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {
+          "0": {
+            "graph": {
+              "mode": "table",
+              "height": 93.15,
+              "optionOpen": false
+            }
+          }
+        },
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "square: (x: Int)Int\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512220864660_-883873554",
+      "id": "20171202-185104_1616583115",
+      "dateCreated": "Dec 2, 2017 6:51:04 PM",
+      "dateStarted": "Dec 2, 2017 6:52:06 PM",
+      "dateFinished": "Dec 2, 2017 6:52:06 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val mydata1 \u003d data.map(square)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:52:57 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "mydata1: org.apache.spark.rdd.RDD[Int] \u003d MapPartitionsRDD[2] at map at \u003cconsole\u003e:31\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512220926174_1397561541",
+      "id": "20171202-185206_1702506747",
+      "dateCreated": "Dec 2, 2017 6:52:06 PM",
+      "dateStarted": "Dec 2, 2017 6:52:57 PM",
+      "dateFinished": "Dec 2, 2017 6:52:58 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "mydata1.collect()",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:53:17 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res2: Array[Int] \u003d Array(1, 4, 9, 16, 25)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512220977697_217597961",
+      "id": "20171202-185257_582764616",
+      "dateCreated": "Dec 2, 2017 6:52:57 PM",
+      "dateStarted": "Dec 2, 2017 6:53:17 PM",
+      "dateFinished": "Dec 2, 2017 6:53:18 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val mydata2 \u003d data.map(record \u003d\u003e square(record))",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:54:08 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "mydata2: org.apache.spark.rdd.RDD[Int] \u003d MapPartitionsRDD[3] at map at \u003cconsole\u003e:31\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512220997577_1920343351",
+      "id": "20171202-185317_1419962229",
+      "dateCreated": "Dec 2, 2017 6:53:17 PM",
+      "dateStarted": "Dec 2, 2017 6:54:08 PM",
+      "dateFinished": "Dec 2, 2017 6:54:08 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "mydata2.collect()",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 6:54:38 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala",
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res3: Array[Int] \u003d Array(1, 4, 9, 16, 25)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512221048437_824639780",
+      "id": "20171202-185408_519015369",
+      "dateCreated": "Dec 2, 2017 6:54:08 PM",
+      "dateStarted": "Dec 2, 2017 6:54:18 PM",
+      "dateFinished": "Dec 2, 2017 6:54:18 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val stocks \u003d sc.textFile(\"/home/naga/bigdata/jobs/stocks\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:18:44 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "stocks: org.apache.spark.rdd.RDD[String] \u003d /home/naga/bigdata/jobs/stocks MapPartitionsRDD[5] at textFile at \u003cconsole\u003e:27\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512221058199_-78903879",
+      "id": "20171202-185418_1351060821",
+      "dateCreated": "Dec 2, 2017 6:54:18 PM",
+      "dateStarted": "Dec 2, 2017 7:18:44 PM",
+      "dateFinished": "Dec 2, 2017 7:18:45 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "stocks.first()",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:18:58 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res4: String \u003d NYSE\tCLI\t2009-12-31\t35.39\t35.70\t34.50\t34.57\t890100\t34.12\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512222524290_312264804",
+      "id": "20171202-191844_1494554814",
+      "dateCreated": "Dec 2, 2017 7:18:44 PM",
+      "dateStarted": "Dec 2, 2017 7:18:58 PM",
+      "dateFinished": "Dec 2, 2017 7:18:59 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "stocks.top(5)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:19:19 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res5: Array[String] \u003d Array(NYSE\tCZZ\t2009-12-31\t8.77\t8.77\t8.67\t8.70\t694200\t8.70, NYSE\tCZZ\t2009-12-30\t8.71\t8.80\t8.46\t8.68\t1588200\t8.68, NYSE\tCZZ\t2009-12-29\t8.89\t8.97\t8.59\t8.69\t3261700\t8.69, NYSE\tCZZ\t2009-12-28\t8.06\t8.52\t8.06\t8.49\t3863400\t8.49, NYSE\tCZZ\t2009-12-24\t7.88\t8.01\t7.81\t7.99\t705100\t7.99)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512222538355_-654609182",
+      "id": "20171202-191858_1228240789",
+      "dateCreated": "Dec 2, 2017 7:18:58 PM",
+      "dateStarted": "Dec 2, 2017 7:19:19 PM",
+      "dateFinished": "Dec 2, 2017 7:19:20 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val projdata \u003d stocks.map(record \u003d\u003e (record.split(\"\\t\")(1), record.split(\"\\t\")(7).toLong))",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:20:44 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "projdata: org.apache.spark.rdd.RDD[(String, Long)] \u003d MapPartitionsRDD[7] at map at \u003cconsole\u003e:29\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512222559901_-224213081",
+      "id": "20171202-191919_1354113573",
+      "dateCreated": "Dec 2, 2017 7:19:19 PM",
+      "dateStarted": "Dec 2, 2017 7:20:44 PM",
+      "dateFinished": "Dec 2, 2017 7:20:45 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "projdata.first()",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:21:13 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {}
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res6: (String, Long) \u003d (CLI,890100)\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512222644338_-701378338",
+      "id": "20171202-192044_1278598264",
+      "dateCreated": "Dec 2, 2017 7:20:44 PM",
+      "dateStarted": "Dec 2, 2017 7:21:13 PM",
+      "dateFinished": "Dec 2, 2017 7:21:14 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val volume \u003d projdata.reduceByKey((a, b) \u003d\u003e (a + b))",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:22:36 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "volume: org.apache.spark.rdd.RDD[(String, Long)] \u003d ShuffledRDD[8] at reduceByKey at \u003cconsole\u003e:31\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512222673375_-1844806096",
+      "id": "20171202-192113_61452596",
+      "dateCreated": "Dec 2, 2017 7:21:13 PM",
+      "dateStarted": "Dec 2, 2017 7:22:36 PM",
+      "dateFinished": "Dec 2, 2017 7:22:37 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "volume.top(5)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:22:54 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res7: Array[(String, Long)] \u003d Array((CZZ,320438500), (CYT,160494300), (CYS,20453400), (CYN,240050900), (CYH,394113200))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512222756144_-928825711",
+      "id": "20171202-192236_1146528027",
+      "dateCreated": "Dec 2, 2017 7:22:36 PM",
+      "dateStarted": "Dec 2, 2017 7:22:54 PM",
+      "dateFinished": "Dec 2, 2017 7:22:57 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "volume.takeOrdered(10)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:25:18 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "res10: Array[(String, Long)] \u003d Array((CA,1470101300), (CAB,199893800), (CACI,84117700), (CAE,7102600), (CAF,58350100), (CAG,1089268300), (CAH,858600400), (CAJ,156958300), (CAL,1929194000), (CAM,1008806300))\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512222774415_2098024535",
+      "id": "20171202-192254_5936765",
+      "dateCreated": "Dec 2, 2017 7:22:54 PM",
+      "dateStarted": "Dec 2, 2017 7:25:18 PM",
+      "dateFinished": "Dec 2, 2017 7:25:19 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "user": "anonymous",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1512222799948_-1954905055",
+      "id": "20171202-192319_2139237117",
+      "dateCreated": "Dec 2, 2017 7:23:19 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Spark",
+  "id": "2CZVBD3GS",
+  "angularObjects": {
+    "2D2XF6DXX:shared_process": [],
+    "2CZBD4R81:shared_process": [],
+    "2D2P2SB47:shared_process": [],
+    "2D3BSM1Q9:shared_process": [],
+    "2CZEKN1CJ:shared_process": [],
+    "2CYY5DHZA:shared_process": [],
+    "2CZBQQANG:shared_process": [],
+    "2D1QBJRSU:shared_process": [],
+    "2CZP22M4C:shared_process": [],
+    "2CZVY7Z82:shared_process": [],
+    "2D2AZ9GW8:shared_process": [],
+    "2CYF2B2ZT:shared_process": [],
+    "2CYU6GUGU:shared_process": [],
+    "2D2FDAHWV:shared_process": [],
+    "2CYQ43XES:shared_process": [],
+    "2D27ZBXK2:shared_process": [],
+    "2CZQDPADQ:shared_process": [],
+    "2CYGN7QWS:shared_process": [],
+    "2D2B7S5TG:shared_process": []
+  },
+  "config": {
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {}
+}

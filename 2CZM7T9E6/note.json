@@ -1,0 +1,335 @@
+{
+  "paragraphs": [
+    {
+      "text": "%pyspark\nsc.version",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:30:02 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "python"
+        },
+        "editorMode": "ace/mode/python"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "u\u00272.1.0\u0027\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223166366_-1967063778",
+      "id": "20171202-192926_1174703608",
+      "dateCreated": "Dec 2, 2017 7:29:26 PM",
+      "dateStarted": "Dec 2, 2017 7:30:02 PM",
+      "dateFinished": "Dec 2, 2017 7:30:03 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\nstocks \u003d sc.textFile(\"/home/naga/bigdata/jobs/stocks\")\n",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:30:35 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223202457_-14801886",
+      "id": "20171202-193002_42048365",
+      "dateCreated": "Dec 2, 2017 7:30:02 PM",
+      "dateStarted": "Dec 2, 2017 7:30:35 PM",
+      "dateFinished": "Dec 2, 2017 7:30:35 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\nstocks.first()",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:30:58 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "u\u0027NYSE\\tCLI\\t2009-12-31\\t35.39\\t35.70\\t34.50\\t34.57\\t890100\\t34.12\u0027\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223235557_-790208837",
+      "id": "20171202-193035_1587205189",
+      "dateCreated": "Dec 2, 2017 7:30:35 PM",
+      "dateStarted": "Dec 2, 2017 7:30:58 PM",
+      "dateFinished": "Dec 2, 2017 7:30:59 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\ndef projectData(record):\n    cols \u003d record.split(\"\\t\")\n    return (cols[1], int(cols[7]))",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:33:04 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223258705_-1389616975",
+      "id": "20171202-193058_1306570986",
+      "dateCreated": "Dec 2, 2017 7:30:58 PM",
+      "dateStarted": "Dec 2, 2017 7:33:04 PM",
+      "dateFinished": "Dec 2, 2017 7:33:04 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\nprojdata \u003d stocks.map(lambda record : projectData(record))",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:34:50 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223384911_-729605690",
+      "id": "20171202-193304_1733321913",
+      "dateCreated": "Dec 2, 2017 7:33:04 PM",
+      "dateStarted": "Dec 2, 2017 7:34:50 PM",
+      "dateFinished": "Dec 2, 2017 7:34:50 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\nprojdata.top(10)",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:35:04 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[(u\u0027CZZ\u0027, 6615800), (u\u0027CZZ\u0027, 6197300), (u\u0027CZZ\u0027, 5070400), (u\u0027CZZ\u0027, 4694900), (u\u0027CZZ\u0027, 4228600), (u\u0027CZZ\u0027, 3880700), (u\u0027CZZ\u0027, 3863400), (u\u0027CZZ\u0027, 3738600), (u\u0027CZZ\u0027, 3261700), (u\u0027CZZ\u0027, 3208000)]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223490074_-645560220",
+      "id": "20171202-193450_364583126",
+      "dateCreated": "Dec 2, 2017 7:34:50 PM",
+      "dateStarted": "Dec 2, 2017 7:35:04 PM",
+      "dateFinished": "Dec 2, 2017 7:35:05 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\nvolume \u003d projdata.reduceByKey(lambda a, b : (a + b))",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:37:01 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223504397_-1442375192",
+      "id": "20171202-193504_611698932",
+      "dateCreated": "Dec 2, 2017 7:35:04 PM",
+      "dateStarted": "Dec 2, 2017 7:37:01 PM",
+      "dateFinished": "Dec 2, 2017 7:37:01 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\nvolume.collect()",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:37:16 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "[(u\u0027CPL\u0027, 29861100), (u\u0027CPN\u0027, 774626900), (u\u0027CCU\u0027, 11246400), (u\u0027CCW\u0027, 22380600), (u\u0027CCS\u0027, 12690200), (u\u0027CPX\u0027, 229730000), (u\u0027CCO\u0027, 135570700), (u\u0027CCI\u0027, 511953300), (u\u0027CCK\u0027, 530191700), (u\u0027CPP\u0027, 1003700), (u\u0027CPT\u0027, 375258700), (u\u0027CCC\u0027, 184380500), (u\u0027CLP\u0027, 244366600), (u\u0027CW\u0027, 73909500), (u\u0027CPB\u0027, 591888100), (u\u0027CHB\u0027, 352443100), (u\u0027CHD\u0027, 155789600), (u\u0027CHH\u0027, 103693900), (u\u0027CHL\u0027, 532109000), (u\u0027CHN\u0027, 33044900), (u\u0027CHP\u0027, 35218200), (u\u0027CHT\u0027, 232490500), (u\u0027CPF\u0027, 209556200), (u\u0027CLNY\u0027, 16799700), (u\u0027CCM\u0027, 14036400), (u\u0027CXH\u0027, 3874200), (u\u0027CMO\u0027, 198515500), (u\u0027CRP\u0027, 48655100), (u\u0027CMK\u0027, 5395700), (u\u0027COG\u0027, 467178200), (u\u0027CMI\u0027, 779379300), (u\u0027CMG\u0027, 146436400), (u\u0027CME\u0027, 298119800), (u\u0027CMC\u0027, 456368300), (u\u0027CMA\u0027, 905646700), (u\u0027CCE\u0027, 1037486800), (u\u0027CIU\u0027, 42669500), (u\u0027CMU\u0027, 11049300), (u\u0027CMS\u0027, 975517600), (u\u0027CRL\u0027, 231683200), (u\u0027CEG\u0027, 454911400), (u\u0027CEE\u0027, 17850000), (u\u0027CEC\u0027, 84529500), (u\u0027CEA\u0027, 3972400), (u\u0027CEO\u0027, 114522200), (u\u0027CSE\u0027, 1127719500), (u\u0027CPV\u0027, 14101100), (u\u0027CIE\u0027, 31981500), (u\u0027CJB\u0027, 12100800), (u\u0027CSA\u0027, 64618000), (u\u0027CSC\u0027, 303912900), (u\u0027CJR\u0027, 4143400), (u\u0027CSQ\u0027, 119368900), (u\u0027CSS\u0027, 8356200), (u\u0027CBB\u0027, 346923100), (u\u0027CASC\u0027, 18662100), (u\u0027CBD\u0027, 68631300), (u\u0027CBL\u0027, 781855800), (u\u0027CBR\u0027, 83541100), (u\u0027CBT\u0027, 147177600), (u\u0027CBZ\u0027, 62881400), (u\u0027CRR\u0027, 125927300), (u\u0027CTV\u0027, 471459700), (u\u0027COY\u0027, 29635700), (u\u0027CMM\u0027, 6735700), (u\u0027CSU\u0027, 20385800), (u\u0027CTB\u0027, 244473600), (u\u0027CTL\u0027, 672982800), (u\u0027CNL\u0027, 119551600), (u\u0027COO\u0027, 166113500), (u\u0027CGI\u0027, 33551400), (u\u0027CRT\u0027, 6375300), (u\u0027CGO\u0027, 8265000), (u\u0027CGA\u0027, 134111700), (u\u0027CJT\u0027, 15648300), (u\u0027CZZ\u0027, 320438500), (u\u0027CI\u0027, 1220074200), (u\u0027CO\u0027, 4074200), (u\u0027CM\u0027, 142935000), (u\u0027CLD\u0027, 53553900), (u\u0027CA\u0027, 1470101300), (u\u0027CLB\u0027, 72866900), (u\u0027CY\u0027, 1101805100), (u\u0027CLX\u0027, 426837400), (u\u0027CS\u0027, 365102200), (u\u0027CUK\u0027, 57363100), (u\u0027CLR\u0027, 271673200), (u\u0027CDR\u0027, 80627900), (u\u0027CIA\u0027, 28420400), (u\u0027CIG\u0027, 482890400), (u\u0027CAM\u0027, 1008806300), (u\u0027CVX\u0027, 3009385100), (u\u0027CAS\u0027, 35253000), (u\u0027CII\u0027, 41607100), (u\u0027CIM\u0027, 1790903800), (u\u0027CVH\u0027, 629144300), (u\u0027CLH\u0027, 57560600), (u\u0027CVD\u0027, 209366900), (u\u0027CVB\u0027, 409300), (u\u0027CRH\u0027, 53446400), (u\u0027CAE\u0027, 7102600), (u\u0027CYS\u0027, 20453400), (u\u0027CRN\u0027, 25348800), (u\u0027CYE\u0027, 32548700), (u\u0027CLF\u0027, 1309036000), (u\u0027CNP\u0027, 1030141700), (u\u0027CNX\u0027, 964266900), (u\u0027CE\u0027, 550097600), (u\u0027CAG\u0027, 1089268300), (u\u0027CACI\u0027, 84117700), (u\u0027CNH\u0027, 102600000), (u\u0027CFN\u0027, 171439000), (u\u0027CFL\u0027, 91973600), (u\u0027CFX\u0027, 53293100), (u\u0027CFT\u0027, 12846900), (u\u0027CFR\u0027, 195398100), (u\u0027CPK\u0027, 7242200), (u\u0027CCZ\u0027, 337500), (u\u0027CCT\u0027, 6837300), (u\u0027CPC\u0027, 22412500), (u\u0027CPE\u0027, 143243000), (u\u0027CPY\u0027, 12366300), (u\u0027CCH\u0027, 14013700), (u\u0027CKR\u0027, 115517700), (u\u0027CP\u0027, 230844500), (u\u0027CPO\u0027, 188607700), (u\u0027CVO\u0027, 102395000), (u\u0027CPA\u0027, 99084700), (u\u0027CLS\u0027, 279977700), (u\u0027COV\u0027, 1003466600), (u\u0027CHA\u0027, 75205800), (u\u0027CHE\u0027, 48054600), (u\u0027CHG\u0027, 17118300), (u\u0027CQB\u0027, 201267000), (u\u0027CYD\u0027, 41025300), (u\u0027CKH\u0027, 57444600), (u\u0027CHS\u0027, 1116257300), (u\u0027CHU\u0027, 598641100), (u\u0027CHW\u0027, 54665800), (u\u0027CHY\u0027, 56840000), (u\u0027CYH\u0027, 394113200), (u\u0027CXW\u0027, 323743200), (u\u0027CCJ\u0027, 626945800), (u\u0027CXE\u0027, 14033500), (u\u0027CXG\u0027, 57538400), (u\u0027CXO\u0027, 201866900), (u\u0027CMN\u0027, 45151900), (u\u0027CML\u0027, 74208800), (u\u0027CRY\u0027, 70029700), (u\u0027CRA\u0027, 183359200), (u\u0027CMZ\u0027, 218601800), (u\u0027CRE\u0027, 16265000), (u\u0027CRK\u0027, 224862600), (u\u0027CRI\u0027, 247052000), (u\u0027CRM\u0027, 549454200), (u\u0027CEL\u0027, 44388000), (u\u0027CIT\u0027, 82061000), (u\u0027CSL\u0027, 121077300), (u\u0027CSH\u0027, 95960700), (u\u0027CSJ\u0027, 89980700), (u\u0027CJA\u0027, 40610800), (u\u0027CSX\u0027, 1579983200), (u\u0027CJS\u0027, 6866000), (u\u0027CSV\u0027, 11088600), (u\u0027CSP\u0027, 12308200), (u\u0027CSR\u0027, 203232100), (u\u0027CBC\u0027, 30876800), (u\u0027CVI\u0027, 88240600), (u\u0027CBG\u0027, 1538411600), (u\u0027CBE\u0027, 566010000), (u\u0027CBK\u0027, 59207700), (u\u0027CBI\u0027, 393392800), (u\u0027CBM\u0027, 39332400), (u\u0027CBS\u0027, 2924397700), (u\u0027CBU\u0027, 68965400), (u\u0027CBY\u0027, 148200000), (u\u0027COP\u0027, 3406420000), (u\u0027COT\u0027, 226719800), (u\u0027CRS\u0027, 163957000), (u\u0027COF\u0027, 3367353100), (u\u0027COH\u0027, 1493105500), (u\u0027COL\u0027, 329036200), (u\u0027CVG\u0027, 299359700), (u\u0027CGX\u0027, 31405100), (u\u0027CWF\u0027, 11915200), (u\u0027CGV\u0027, 38828100), (u\u0027CLI\u0027, 423528400), (u\u0027CL\u0027, 824305000), (u\u0027CB\u0027, 927567100), (u\u0027CUZ\u0027, 284785700), (u\u0027CLC\u0027, 88591300), (u\u0027CX\u0027, 2778950800), (u\u0027CUB\u0027, 42819500), (u\u0027CR\u0027, 100003400), (u\u0027CLW\u0027, 36673800), (u\u0027CV\u0027, 12839700), (u\u0027CT\u0027, 103451000), (u\u0027CDE\u0027, 585073500), (u\u0027CAJ\u0027, 156958300), (u\u0027CDI\u0027, 27432400), (u\u0027CIB\u0027, 111006800), (u\u0027CIF\u0027, 12237000), (u\u0027CAP\u0027, 12745800), (u\u0027CVS\u0027, 3193905500), (u\u0027CAT\u0027, 3230492600), (u\u0027CIR\u0027, 39635500), (u\u0027CAH\u0027, 858600400), (u\u0027CAL\u0027, 1929194000), (u\u0027CAB\u0027, 199893800), (u\u0027CVE\u0027, 24526300), (u\u0027CKP\u0027, 53400000), (u\u0027CAF\u0027, 58350100), (u\u0027CN\u0027, 0), (u\u0027CIX\u0027, 743100), (u\u0027CYT\u0027, 160494300), (u\u0027CVC\u0027, 499117600), (u\u0027CCL\u0027, 1428873600), (u\u0027CHI\u0027, 47582100), (u\u0027CMP\u0027, 185203300), (u\u0027CYN\u0027, 240050900), (u\u0027CNW\u0027, 381771000), (u\u0027CHK\u0027, 4036943100), (u\u0027CNS\u0027, 67025100), (u\u0027CNQ\u0027, 757746300), (u\u0027CWT\u0027, 37568800), (u\u0027CF\u0027, 533919600), (u\u0027CXS\u0027, 15946200), (u\u0027CVA\u0027, 379381000), (u\u0027CNC\u0027, 123579500), (u\u0027CNA\u0027, 143784700), (u\u0027CNO\u0027, 1403914200), (u\u0027CNK\u0027, 82280100), (u\u0027CNI\u0027, 417142600), (u\u0027CTS\u0027, 40244700), (u\u0027CFI\u0027, 4413800), (u\u0027CATO\u0027, 69685500), (u\u0027CWZ\u0027, 790500)]\n"
+          }
+        ]
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223621224_-1654989736",
+      "id": "20171202-193701_1295521720",
+      "dateCreated": "Dec 2, 2017 7:37:01 PM",
+      "dateStarted": "Dec 2, 2017 7:37:16 PM",
+      "dateFinished": "Dec 2, 2017 7:37:17 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n\nvolume.saveAsTextFile(\"/home/naga/bigdata/jobs/volume\")",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:38:08 PM",
+      "config": {
+        "colWidth": 12.0,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala"
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223636644_1533439723",
+      "id": "20171202-193716_714277528",
+      "dateCreated": "Dec 2, 2017 7:37:16 PM",
+      "dateStarted": "Dec 2, 2017 7:38:08 PM",
+      "dateFinished": "Dec 2, 2017 7:38:09 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%pyspark\n",
+      "user": "anonymous",
+      "dateUpdated": "Dec 2, 2017 7:38:08 PM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1512223688536_1611067056",
+      "id": "20171202-193808_1061427609",
+      "dateCreated": "Dec 2, 2017 7:38:08 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Pyspark",
+  "id": "2CZM7T9E6",
+  "angularObjects": {
+    "2D2XF6DXX:shared_process": [],
+    "2CZBD4R81:shared_process": [],
+    "2D2P2SB47:shared_process": [],
+    "2D3BSM1Q9:shared_process": [],
+    "2CZEKN1CJ:shared_process": [],
+    "2CYY5DHZA:shared_process": [],
+    "2CZBQQANG:shared_process": [],
+    "2D1QBJRSU:shared_process": [],
+    "2CZP22M4C:shared_process": [],
+    "2CZVY7Z82:shared_process": [],
+    "2D2AZ9GW8:shared_process": [],
+    "2CYF2B2ZT:shared_process": [],
+    "2CYU6GUGU:shared_process": [],
+    "2D2FDAHWV:shared_process": [],
+    "2CYQ43XES:shared_process": [],
+    "2D27ZBXK2:shared_process": [],
+    "2CZQDPADQ:shared_process": [],
+    "2CYGN7QWS:shared_process": [],
+    "2D2B7S5TG:shared_process": []
+  },
+  "config": {},
+  "info": {}
+}
